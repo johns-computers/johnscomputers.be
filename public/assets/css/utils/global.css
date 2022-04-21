@@ -1,0 +1,16 @@
+:root {
+    --header-blue-background: #011124;
+    --text-default: white;
+    --default-red: #ff0000;
+    --hover-red: #c50000;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+}

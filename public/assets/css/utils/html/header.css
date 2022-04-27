@@ -50,6 +50,20 @@ header {
     display: grid;
 }
 
+.header-nav-links-li:hover .header-nav-links {
+    background-color: white;
+}
+
+.header-nav-dropdown-container:hover .header-nav-links {
+    background-color: white;
+}
+
+
+.dropdown-conatiner-curved {
+    border-top-left-radius: 10px;
+}
+
+
 .header-action-container {
     position: relative;
     float: right;
@@ -93,6 +107,7 @@ header {
     grid-template-columns: auto auto;
     background-color: var(--text-default);
     border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 10px;
     -webkit-box-shadow: 0px 9px 20px 6px var(--header-blue-background); 

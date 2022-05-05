@@ -1,31 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>John's Computers</title>
 
-    <!-- CSS -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John's Computers</title>
 
-    <link rel="stylesheet" href="./assets/css/utils/global.css">
-    <!-- JS -->
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.11/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <!-- <script defer src="/__/firebase/9.6.11/firebase-auth-compat.js"></script> -->
-    <!-- <script defer src="/__/firebase/9.6.11/firebase-database-compat.js"></script> -->
-    <script defer src="/__/firebase/9.6.11/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-functions-compat.js"></script>
-    <!-- <script defer src="/__/firebase/9.6.11/firebase-messaging-compat.js"></script> -->
-    <!-- <script defer src="/__/firebase/9.6.11/firebase-storage-compat.js"></script> -->
-    <script defer src="/__/firebase/9.6.11/firebase-analytics-compat.js"></script>
-    <!-- <script defer src="/__/firebase/9.6.11/firebase-remote-config-compat.js"></script> -->
-    <script defer src="/__/firebase/9.6.11/firebase-performance-compat.js"></script>
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    
-    <script defer src="./assets/js/utils/includes.js"></script>
-    <script defer src="./assets/js/utils/html/header.js"></script>
-    <body>
-      <div include="./assets/html/header.html"></div>
-    </body>
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="./assets/css/utils/global.css">
+  <link rel="stylesheet" href="./assets/css/src/index.html/main-head.css">
+  <link rel="stylesheet" href="./assets/css/src/index.html/shop-online.css">
+  <!-- JS -->
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.6.11/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <!-- <script defer src="/__/firebase/9.6.11/firebase-auth-compat.js"></script> -->
+  <!-- <script defer src="/__/firebase/9.6.11/firebase-database-compat.js"></script> -->
+  <script defer src="/__/firebase/9.6.11/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/9.6.11/firebase-functions-compat.js"></script>
+  <!-- <script defer src="/__/firebase/9.6.11/firebase-messaging-compat.js"></script> -->
+  <!-- <script defer src="/__/firebase/9.6.11/firebase-storage-compat.js"></script> -->
+  <script defer src="/__/firebase/9.6.11/firebase-analytics-compat.js"></script>
+  <!-- <script defer src="/__/firebase/9.6.11/firebase-remote-config-compat.js"></script> -->
+  <script defer src="/__/firebase/9.6.11/firebase-performance-compat.js"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  <script defer src="./assets/js/utils/includes.js"></script>
+  <script defer src="./assets/js/utils/html/header.js"></script>
+
+<body>
+  <div include="./assets/html/header.html"></div>
+  <main>
+    <section id="main-head">
+      <div class="main-head-title">
+        <h1>JOHN<span>'</span>S COMPUTERS</h1>
+        <h2>Le service <span>informatique</span> de votre region</h2>
+      </div>
+      <div class="main-head-arrow-container">
+        <a data-scroll href="#so">
+          <div class="arrow"></div>
+        </a>
+      </div>
+    </section>
+    <section id="so">
+      <article>
+        <div class="so-ar-content">
+          <div class="so-ar-content-title">
+            <h3>SHOP <span>ONLINE</span></h3>
+          </div>
+          <div class="so-ar-content-text">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="so-ar-content-btn">
+            <button>MAGASIN EN LIGNE</button>
+          </div>
+        </div>
+        <div class="so-ar-img">
+          <img src="./assets/img/content/cute-cat.jpg" alt="">
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+
 </html>

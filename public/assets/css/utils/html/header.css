@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 8%;
+    padding: 20px 8%;
     background: rgb(1,17,36);
     background: -moz-linear-gradient(180deg, rgba(1,17,36,1) 0%, rgba(1,17,36,1) 90%, rgba(0,212,255,0) 100%);
     background: -webkit-linear-gradient(180deg, rgba(1,17,36,1) 0%, rgba(1,17,36,1) 90%, rgba(0,212,255,0) 100%);
@@ -31,7 +31,7 @@ header {
 }
 
 .header-nav-links li {
-    padding: 0px 20px;
+    padding: 14px 20px;
 }
 
 .header-nav-links li a {
@@ -51,11 +51,11 @@ header {
 }
 
 .header-nav-links-li:hover .header-nav-links {
-    background-color: white;
+    background: white;
 }
 
 .header-nav-dropdown-container:hover .header-nav-links {
-    background-color: white;
+    background: white;
 }
 
 
@@ -95,9 +95,16 @@ header {
     background-color: var(--default-red);
 }
 
+.header-nav-links-li:hover .header-nav-links {
+    background-color: white !important;
+}
+
+.header-nav-dropdown-container:hover .header-nav-links {
+    background-color: white !important;
+}
 
 .header-nav-links>li>div {
-    /* margin-top: 4vh; */
+    margin-top: 1.4vh;
     position: absolute;
     width: 30%;
     left: 33%;

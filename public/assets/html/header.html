@@ -6,8 +6,8 @@
     <nav>
         <ul class="header-nav-links" id="nav-links">
             <li class="header-nav-links-li">
-                <a href="#shop-online">Magasin en Ligne</a>
-                <div class="header-nav-dropdown-container">
+                <a href="#shop">Magasin en Ligne</a>
+                <div class="header-nav-dropdown-container dropdown-conatiner-curved">
                     <div class="nav-link-dropdown-item">
                         <img src="assets/img/dropdown-icons/carrot.png" alt="">
                         <a href="#carrot">Magasin en Ligne</a>
@@ -72,23 +72,35 @@
                     </div>
                 </div>
             </li>
-            <li class="header-nav-links-li">
-                <a href="#sell-and-repair">Vente & Réparation</a>
+            <li class="header-nav-links-li header-nav-links-nodrop">
+                <a href="#repa">Vente & Réparation</a>
             </li>
         </ul>
     </nav>
     <div class="header-action-container">
-        <a class="header-action-btn header-action-btn-contact" href="#">Nous contacter</a>
+        <a class="header-action-btn header-action-btn-contact" href="#infos">Nous contacter</a>
         <a class="header-action-btn header-action-btn-anydesk" href="https://get.anydesk.com/XUqQExwp/AnyDesk_JohnsComputers.exe">Télécharger AnyDesk</a>
     </div>
-    <p class="header-resp-menu header-action-btn">Menu</p>
+    <p id="header-resp-menu" class="header-resp-menu header-action-btn" onclick="document.querySelector('.header-resp-menu-overlay').classList.add('header-resp-menu-overlay--active')">Menu</p>
     <div class="header-resp-menu-overlay">
-        <a class="header-resp-menu-close">&times;</a>
+        <a class="header-resp-menu-close" onclick="document.querySelector('.header-resp-menu-overlay').classList.remove('header-resp-menu-overlay--active')">&times;</a>
         <div class="header-resp-menu-content">
             <a href="#shop-online">Magasin en Ligne</a>
             <a href="#telecom">Télécom</a>
             <a href="#pro">PRO</a>
-            <a href="#sell-and-repair">Vente & Réparation</a>
+            <a href="#repa">Vente & Réparation</a>
         </div>
     </div>
+
+    <script defer>
+        const overlay = document.querySelector(".header-resp-menu-overlay");
+        document.getElementById('header-resp-menu').addEventListener("click", () => {
+        overlay.classList.add("header-resp-menu-overlay--active");
+        });
+
+        document.querySelector(".header-resp-menu-close").addEventListener("click", () => {
+        overlay.classList.remove("header-resp-menu-overlay--active");
+        });
+    </script>
 </header>
+

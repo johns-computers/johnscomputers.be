@@ -3,11 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background: rgb(1,17,36);
-    background: -moz-linear-gradient(180deg, rgba(1,17,36,1) 0%, rgba(1,17,36,1) 90%, rgba(0,212,255,0) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(1,17,36,1) 0%, rgba(1,17,36,1) 90%, rgba(0,212,255,0) 100%);
-    background: linear-gradient(180deg, rgba(1,17,36,1) 0%, rgba(1,17,36,1) 90%, rgba(0,212,255,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011124",endColorstr="#00d4ff",GradientType=1);
+    background-color: var(--header-blue-background);
 }
 
 .header-logo-link {
@@ -32,6 +28,23 @@ header {
 
 .header-nav-links li {
     padding: 14px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.header-nav-links li:hover {
+    background-color: var(--text-default);
+    padding: 14px 20px;
+}
+
+.header-nav-links li:hover a {
+    color: var(--default-red);
+    width: 100%;
+    height: 100%;
+}
+
+.header-nav-links-nodrop {
+    border-radius: 15px;
 }
 
 .header-nav-links li a {
@@ -51,11 +64,11 @@ header {
 }
 
 .header-nav-links-li:hover .header-nav-links {
-    background: white;
+    background: var(--text-default);
 }
 
 .header-nav-dropdown-container:hover .header-nav-links {
-    background: white;
+    background: var(--text-default);
 }
 
 
@@ -96,11 +109,11 @@ header {
 }
 
 .header-nav-links-li:hover .header-nav-links {
-    background-color: white !important;
+    background-color: var(--text-default) !important;
 }
 
 .header-nav-dropdown-container:hover .header-nav-links {
-    background-color: white !important;
+    background-color: var(--text-default) !important;
 }
 
 .header-nav-links>li>div {
@@ -117,12 +130,12 @@ header {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 10px;
-    -webkit-box-shadow: 0px 9px 20px 6px var(--header-blue-background); 
-    box-shadow: 0px 9px 20px 6px var(--header-blue-background);
+    /* -webkit-box-shadow: 0px 11px 17px 5px rgba(0,0,0,0.51); 
+    box-shadow: 0px 11px 17px 5px rgba(0,0,0,0.51); */
 }
 .nav-link-dropdown-item {
     cursor: pointer;
-    background-color: var(--header-blue-background);
+    /* background-color: var(--header-blue-background); */
     border: none;
     border-radius: 10px;
     padding: 10px 10px;
@@ -133,20 +146,22 @@ header {
 
 .nav-link-dropdown-item:hover {
     transition: .2s;
-    background-color: #00050c;
+    /* background-color: #00050c;
     -webkit-box-shadow: 0px 0px 20px 9px #00050c; 
-    box-shadow: 0px 0px 20px 9px #00050c;
+    box-shadow: 0px 0px 20px 9px #00050c; */
 }
 
 
 .nav-link-dropdown-item>img {
+    display: none;
     width: 5%;
 }
 .nav-link-dropdown-item>a {
+    color: black;
     font-size: 1rem;
 }
 .nav-link-dropdown-item:hover>a {
-    color: var(--text-default);
+    color: var(--default-red);
 }
 
 
@@ -164,7 +179,7 @@ header {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: #24252a;
+    background-color: var(--header-blue-background);
     overflow-x: hidden;
     transition: width 0.5s ease 0s;
 }
@@ -190,14 +205,14 @@ header {
 
 .header-resp-menu-overlay a:hover,
 .header-resp-menu-overlay a:focus {
-    color: #0088a9;
+    color: var(--default-red);
 }
 .header-resp-menu-overlay .header-resp-menu-close {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-    color: #edf0f1;
+    color: var(--text-default);
 }
 
 @media screen and (max-height: 450px) {
@@ -218,7 +233,28 @@ header {
 }
 
 
+@media only screen and (max-width: 1490px) {
+    .header-action-btn-anydesk {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .header-action-btn-contact {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .header-logo-link>img {
+        width: 80%;
+    }
+}
+
 @media only screen and (max-width: 800px) {
+    .header-nav-links {
+        display: none;
+    }
     .header-resp-menu,
     .header-action-btn {
         display: none;

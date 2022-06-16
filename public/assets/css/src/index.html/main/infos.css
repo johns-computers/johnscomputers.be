@@ -1,0 +1,239 @@
+#infos {
+    height: max-content;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.infos-title { grid-area: infos-title; }
+.infos-addys { grid-area: infos-addys; }
+.infos-btn { grid-area: infos-btn; }
+
+
+#infos>#addys {
+    display: grid;
+    grid-template-areas:
+    'infos-title infos-title'
+    'infos-addys infos-addys'
+    'infos-btn infos-btn';
+    padding: 10px;
+    grid-gap: 10px;
+    text-align: center;
+    color: black;
+}
+
+.infos-title {
+    font-size: 3rem;
+}
+
+.infos-title>h4>span {
+    color: var(--default-red);
+}
+
+.infos-addys {
+    text-align: center;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 6vw;
+}
+
+.infos-addy {
+    display: grid;
+}
+
+.infos-addy-lz-title { grid-area: infos-addy-lz-title; }
+.infos-addy-lz-address { grid-area: infos-addy-lz-address; }
+.infos-addy-lz-times { grid-area: infos-addy-lz-times; }
+.infos-addy-lz-pro-title { grid-area: infos-addy-lz-pro-title; }
+.infos-addy-lz-pro-contact { grid-area: infos-addy-lz-pro-contact; }
+.infos-addy-lz-pro-times { grid-area: infos-addy-lz-pro-times; }
+
+.infos-addy-lz {
+    padding: 20px 20px;
+    grid-gap: 20px;
+    grid-template-areas:
+    'infos-addy-lz-title infos-addy-lz-title'
+    'infos-addy-lz-address infos-addy-lz-times'
+    'infos-addy-lz-pro-title infos-addy-lz-pro-title'
+    'infos-addy-lz-pro-contact infos-addy-lz-pro-times'
+    ;
+}
+
+.infos-addys>div>div>h5 {
+    font-size: 2.2rem;
+    margin: 12px;
+}
+.infos-addys>div>div>h5>span {
+    color: var(--default-red);
+}
+
+.infos-addys>div>div>h6 {
+    font-size: 1.8rem;
+    margin: 12px;
+    color: var(--gray-text);
+}
+.infos-addys>div>div>hr {
+    border: none;
+    height: 4px;
+    background-color: var(--gray-text);
+    width: 12%;
+}
+
+.infos-addy-lz-address>span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.infos-addy-lz-address>span>a {
+    text-decoration: none;
+    color: black;
+}
+
+.infos-addy-lz-address>span>a:hover {
+    transition: .2s;
+    text-decoration: underline;
+    color: var(--default-red);
+}
+
+
+.infos-addy-lz-times>span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.infos-addy-lz-times>span>span {
+    font-size: 1.1rem;
+    font-weight: initial;
+}
+
+.infos-addy-lz-pro-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: black;
+}
+
+.infos-addy-lz-pro-title>span>span {
+    color: var(--default-red);
+}
+
+.infos-addy-lz-pro-contact>span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.infos-addy-lz-pro-contact>span>a {
+    text-decoration: none;
+    color: black;
+}
+
+.infos-addy-lz-pro-contact>span>a:hover {
+    transition: .2s;
+    text-decoration: underline;
+    color: var(--default-red);
+}
+
+
+.infos-addy-lz-pro-times>span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.infos-addy-lz-pro-times>span>span {
+    font-size: 1.1rem;
+    font-weight: initial;
+}
+
+/* HC */
+
+.infos-addy-hc-address>span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.infos-addy-hc-address>span>a {
+    text-decoration: none;
+    color: black;
+}
+
+.infos-addy-hc-address>span>a:hover {
+    transition: .2s;
+    text-decoration: underline;
+    color: var(--default-red);
+}
+
+
+.infos-addy-hc-times>span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.infos-addy-hc-times>span>span {
+    font-size: 1.1rem;
+    font-weight: initial;
+}
+
+.infos-addys-seperator {
+    border: none;
+    width: 4px;
+    background-color: var(--gray-text);
+    height: 60vh;
+    position: relative;
+    top: 10vh;
+}
+
+.infos-btn>button {
+    background-color: var(--default-red);
+    padding: 16px 20px;
+    min-width: max-content;
+    width: 16vw;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: var(--red-shadow);
+    color: var(--text-default);
+    font-weight: 600;
+}
+
+.infos-btn>button:hover {
+    transition: .2s;
+    background-color: var(--hover-red);
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .infos-addys-seperator {
+        display: none;
+    }
+    .infos-addys {
+        grid-template-columns: auto;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .infos-addy-lz {
+        grid-template-areas:
+        'infos-addy-lz-title'
+        'infos-addy-lz-address'
+        'infos-addy-lz-times'
+        'infos-addy-lz-pro-title'
+        'infos-addy-lz-pro-contact'
+        'infos-addy-lz-pro-times'
+        ;
+    }
+}

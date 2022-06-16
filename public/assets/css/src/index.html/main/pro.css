@@ -1,0 +1,114 @@
+#pro {
+    background-color: var(--pro-blue-background);
+    height: max-content;
+    padding: 5% 5%;
+}
+
+#pro>div{
+    background-color: white;
+    color: var(--text-default);
+    padding: 3% 3%;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: black;
+    animation: show ease-in 2s;
+}
+
+#pro>div>div:first-child {
+    text-align: center;
+    padding: 0px 10%;
+    padding-right: 30%;
+}
+#pro>div>div:first-child>h4 {
+    color: black;
+    font-size: 3rem;
+}
+
+#pro>div>div:first-child>h4 span {
+    color: var(--default-red);
+}
+
+#pro>div>div:first-child>p {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#pro>div>div:first-child>a {
+    position: relative;
+    top: 50px;
+    padding: 14px 20px;
+    background-color: var(--default-red);
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 15px;
+    color: var(--text-default);
+    text-decoration: none;
+    box-shadow: var(--red-shadow);
+    font-weight: 600;
+}
+
+#pro>div>div:first-child>a:hover {
+    transition: .2s;
+    background-color: var(--hover-red);
+}
+
+#pro>div>div>img {
+    border-radius: 40px;
+    -webkit-user-drag: none;
+}
+
+@media only screen and (max-width: 900px) {
+    #pro>div>div>img {
+        display: none;
+    }
+    #pro>div {
+        display: block;
+        text-align: center;
+    }
+    #pro>div>div:first-child>a {
+        top: 20px;
+    }
+    #pro>div>div:first-child {
+        padding: 5% 14%;
+    }
+    #pro>div>div:first-child>h4 {
+        margin-top: 0%;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #pro>div>div:first-child>a {
+        font-size: 1rem;
+        width: 80px;
+    }
+    #pro>div>div:first-child {
+        padding: 10% 10%;
+    }
+    #pro>div>div:first-child>h4 {
+        font-size: 2rem;
+    }
+}
+
+.service-noob {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.service-noob>div {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}

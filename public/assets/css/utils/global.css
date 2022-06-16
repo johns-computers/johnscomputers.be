@@ -1,15 +1,24 @@
 :root {
     --header-blue-background: #011124;
+    --home-blue-background: #011124;
+    --shop-blue-background: #011124;
+    --telecom-blue-background: #011124;
+    --pro-blue-background: #011124;
+    --repa-blue-background: #011124;
     --text-default: white;
+    --gray-text: #393939;
     --default-red: #ff0000;
     --hover-red: #c50000;
+    --red-shadow: 0 3px 11px 0 rgba(255, 106, 106, 0.559);
 }
 
 html,
 body {
+  /* overflow-x: hidden; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
+  display: block;
 }

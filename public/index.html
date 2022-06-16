@@ -7,61 +7,198 @@
   <title>John's Computers</title>
 
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 
   <link rel="stylesheet" href="./assets/css/utils/global.css">
-  <link rel="stylesheet" href="./assets/css/src/index.html/main-head.css">
-  <link rel="stylesheet" href="./assets/css/src/index.html/shop-online.css">
+  <link rel="stylesheet" href="./assets/css/src/index.html/main/home.css">
+  <link rel="stylesheet" href="./assets/css/src/index.html/main/shop.css">
+  <link rel="stylesheet" href="./assets/css/src/index.html/main/telecom.css">
+  <link rel="stylesheet" href="./assets/css/src/index.html/main/pro.css">
+  <link rel="stylesheet" href="./assets/css/src/index.html/main/repa.css">
+  <link rel="stylesheet" href="./assets/css/src/index.html/main/infos.css">
+  <link rel="stylesheet" href="./assets/css/src/index.html/footer/footer.css">
   <!-- JS -->
-  <!-- update the version number as needed -->
   <script defer src="/__/firebase/9.6.11/firebase-app-compat.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <!-- <script defer src="/__/firebase/9.6.11/firebase-auth-compat.js"></script> -->
-  <!-- <script defer src="/__/firebase/9.6.11/firebase-database-compat.js"></script> -->
   <script defer src="/__/firebase/9.6.11/firebase-firestore-compat.js"></script>
   <script defer src="/__/firebase/9.6.11/firebase-functions-compat.js"></script>
-  <!-- <script defer src="/__/firebase/9.6.11/firebase-messaging-compat.js"></script> -->
-  <!-- <script defer src="/__/firebase/9.6.11/firebase-storage-compat.js"></script> -->
   <script defer src="/__/firebase/9.6.11/firebase-analytics-compat.js"></script>
-  <!-- <script defer src="/__/firebase/9.6.11/firebase-remote-config-compat.js"></script> -->
   <script defer src="/__/firebase/9.6.11/firebase-performance-compat.js"></script>
   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
   <script defer src="./assets/js/utils/includes.js"></script>
-  <script defer src="./assets/js/utils/html/header.js"></script>
+  <script defer src="./assets/js/src/index.html/noob.js"></script>
 
 <body>
   <div include="./assets/html/header.html"></div>
   <main>
-    <section id="main-head">
-      <div class="main-head-title">
+    <section id="home">
+      <div class="title-container">
         <h1>JOHN<span>'</span>S COMPUTERS</h1>
-        <h2>Le service <span>informatique</span> de votre region</h2>
+        <h3>Le Service <span>informatique</span> de votre region</h3>
       </div>
-      <div class="main-head-arrow-container">
-        <a data-scroll href="#so">
+      <div class="arrow-container">
+        <a href="#shop">
           <div class="arrow"></div>
         </a>
       </div>
     </section>
-    <section id="so">
-      <article>
-        <div class="so-ar-content">
-          <div class="so-ar-content-title">
-            <h3>SHOP <span>ONLINE</span></h3>
+
+    <section id="shop">
+      <div>
+        <div>
+          <h4>SHOP <span>ONLINE</span></h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <a href="https://www.johns.selexion.be/">MAGASIN EN LIGNE</a>
+        </div>
+        <div>
+          <img src="./assets/img/content/shop-online.jpg" alt="Selexion Logo">
+        </div>
+      </div>
+    </section>
+
+    <section id="telecom">
+      <div>
+        <div>
+          <h4>TELECOM</h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <a href="#">VOIR PROMOS</a>
+        </div>
+        <div>
+          <img src="./assets/img/content/telecom.png" alt="Telecom Proviers">
+        </div>
+      </div>
+    </section>
+
+    <section id="pro">
+      <div>
+        <div>
+          <h4>SERVICE <span>PRO</span></h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <a href="#">NOS SERVICES PRO</a>
+        </div>
+        <div>
+          <img src="./assets/img/content/cute-cat.jpg" alt="Service Pro Image">
+        </div>
+      </div>
+
+      <div class="service-noob">
+        <div>
+          <h4>SERVICE NOOB</h4>
+          <img src="./assets/img/content/service-noob.jpeg" alt="Service Noob Image">
+        </div>
+      </div>
+    </section>
+
+    <section id="repa">
+      <div>
+        <div>
+          <h4>VENTE & RÉPARATIONS</h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <a href="#">DEMANDER OFFRE/DEVIS</a>
+        </div>
+        <div>
+          <img src="./assets/img/content/cute-cat.jpg" alt="Service Pro Image">
+        </div>
+      </div>
+    </section>
+
+    <section id="infos">
+      <div id="addys">
+        <div class="infos-title">
+          <h4><span>NOS</span> COORDONNÉES</h4>
+        </div>
+        <div class="infos-addys">
+          <div class="infos-addy-lz infos-addy">
+            <div class="infos-addy-lz-title">
+              <h5>JOHN<span>'</span>S COMPUTERS</h5>
+              <h6>LONTZEN</h6>
+              <hr>
+            </div>
+            <div class="infos-addy-lz-address">
+              <span>Chaussèe de Liège 196 <br> 4710 LONTZEN</span>
+              <br>
+              <span>Tel.: <a href="tel:087788984">087/788984</a></span>
+              <br>
+              <span><a href="mailto:sales@johnscomputers.be">sales@johnscomputers.be</a></span>
+              <br>
+              <span><a href="https://wa.me/32476610305"><i class="fa-brands fa-whatsapp"></i> 0476/610.305</a></span>
+            </div>
+            <div class="infos-addy-lz-times">
+              <span>Lundi<br><span>Fermé</span></span>
+              <br>
+              <span>De Mardi à Vendredi<br><span>de 9h à 12h30 - de 13h30 à 18h</span></span>
+              <br>
+              <span>Samedi<br><span>de 10h à 16h</span></span>
+              <br>
+              <span>Dimache<br><span>Fermé</span></span>
+            </div>
+            <div class="infos-addy-lz-pro-title">
+              <span>JOHN'S COMPUTERS SERVICES <span>PRO</span></span>
+            </div>
+            <div class="infos-addy-lz-pro-contact">
+              <span>Tel.: <a href="tel:087448151">087/448151</a></span>
+              <br>
+              <span><a href="mailto:sales@johnscomputers.be">sales@johnscomputers.be</a></span>
+            </div>
+            <div class="infos-addy-lz-pro-times">
+              <span>Lundi<br><span>de 9h à 16h</span></span>
+              <br>
+              <span>De Mardi à Vendredi<br><span>de 9h à 12h30 - de 13h30 à 18h</span></span>
+              <br>
+              <span>Samedi<br><span>de 10h à 16h</span></span>
+              <br>
+              <span>Dimache<br><span>Fermé</span></span>
+            </div>
           </div>
-          <div class="so-ar-content-text">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="so-ar-content-btn">
-            <button>MAGASIN EN LIGNE</button>
+          <hr class="infos-addys-seperator">
+          <div class="infos-addy-hc infos-addy">
+            <div>
+              <h5>JOHN<span>'</span>S COMPUTERS</h5>
+              <h6>HENRI-CHAPELLE</h6>
+              <hr>
+            </div>
+            <div class="infos-addy-hc-address">
+              <span>Village 12 <br> 4841 HENRI-CHAPELLE</span>
+              <br>
+              <span>Tel.: <a href="tel:087788984">087/788984</a></span>
+              <br>
+              <span><a href="mailto:sales@johnscomputers.be">sales@johnscomputers.be</a></span>
+            </div>
+            <div class="infos-addy-hc-times">
+              <span>HORAIRES</span>
+              <hr>
+              <span>Lundi<br><span>Fermé</span></span>
+              <br>
+              <span>De Mardi à Vendredi<br><span>de 9h30 à 12h30 - de 13h30 à 18h</span></span>
+              <br>
+              <span>Samedi<br><span>de 9h30 à 12h30 - 13h30 à 16h</span></span>
+              <br>
+              <span>Dimache<br><span>Fermé</span></span>
+            </div>
           </div>
         </div>
-        <div class="so-ar-img">
-          <img src="./assets/img/content/cute-cat.jpg" alt="">
-        </div>
-      </article>
+        <div class="infos-btn"><button>PRENDRE CONTACT AVEC NOUS</button></div>
+      </div>
     </section>
   </main>
+  <footer>
+    <div>
+      <div>
+        <h4>PLAN DU SITE</h4>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#shop">Shop Online</a></li>
+          <li><a href="#telecom">Telecom</a></li>
+          <li><a href="#pro">Service Pro</a></li>
+          <li><a href="#repa">Vente & Réparation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-img-container">
+      <img src="./assets/img/logo/LOGO-JOHNS-SELEXION-V3-1.png" alt="Johns Computers Footer Image">
+    </div>
+  </footer>
 </body>
 
 </html>

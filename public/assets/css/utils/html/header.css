@@ -56,10 +56,12 @@ header {
 }
 
 .header-nav-links-li:hover .header-nav-dropdown-container {
+    width: 60vw;
     display: grid;
 }
 
 .header-nav-dropdown-container:hover .header-nav-dropdown-container {
+    width: 60vw;
     display: grid;
 }
 

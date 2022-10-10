@@ -54,6 +54,7 @@
 }
 
 #pro>div>div>img {
+    /* width: 10%; */
     border-radius: 40px;
     -webkit-user-drag: none;
 }

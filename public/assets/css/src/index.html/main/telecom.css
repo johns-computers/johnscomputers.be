@@ -9,16 +9,17 @@
     padding: 3% 3%;
     border-radius: 50px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     animation: show ease-in 2s;
 }
 
 #telecom>div>div:first-child {
     text-align: center;
     padding: 0px 10%;
-    padding-right: 30%;
+    padding-right: 10%;
 }
 #telecom>div>div:first-child>h4 {
+    margin-top: 0px;
     font-size: 3rem;
 }
 
@@ -29,7 +30,7 @@
 
 #telecom>div>div:first-child>a {
     position: relative;
-    top: 50px;
+    top: 10px;
     padding: 14px 20px;
     background-color: var(--default-red);
     border: none;
@@ -46,15 +47,31 @@
     background-color: var(--hover-red);
 }
 
-#telecom>div>div>img {
-    border-radius: 40px;
+#telecom>div>div:not(#telecom>div>div:first-child) {
+    position: relative;
+    top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0;
+}
+
+#telecom>div>div>a {
+    text-align: center;
+}
+
+#telecom>div>div>a>img {
+    width: 70%;
     -webkit-user-drag: none;
+    transition: .6s;
+}
+
+
+#telecom>div>div>a>img:hover {
+    transition: .6s;
+    scale: 0.9;
 }
 
 @media only screen and (max-width: 900px) {
-    #telecom>div>div>img {
-        display: none;
-    }
     #telecom>div {
         display: block;
         text-align: center;

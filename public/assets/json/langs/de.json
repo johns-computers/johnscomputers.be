@@ -1,0 +1,24 @@
+{
+    "elms": [
+        {
+            "querySelector": "#title-sub",
+            "text": "Ihre Lokale <span>IT</span> beratung"
+        },
+        {
+            "querySelector": "#shop-title",
+            "text": "ONLINE <span>SHOP</span>"
+        },
+        {
+            "querySelector": "#shop-text",
+            "text": "Zögern Sie nicht, unseren Online-Shop zu besuchen, Sie finden alles, was Sie für Ihre Arbeit, Ihr Studium, Ihr Zuhause usw. benötigen. Sie haben eine große Auswahl an technologischen Produkten und Haushaltsgeräten."
+        },
+        {
+            "querySelector": "#shop-btn",
+            "text": "ONLINE SHOP"
+        },
+        {
+            "querySelector": "#telecom-title",
+            "text": "TELEKOM"
+        }
+    ]
+}
